@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+/* Navbar */
+
+.top-row {
+  background-color: #41a7b3;
+}
+
+.logo {
+  width: 100%;
+  position: absolute;
+  top: -0px;
+  left: 35px;
+  z-index: 1;
+}
+
+.navbar {
+  background: 0.5;
+  background-color: #41a7b3;
+  padding: 1% 2%;
+  z-index: 0;
+}
+
+.nav-item {
+  padding: 7px 25px;
+}
+
+.btn-style {
+  background-color: #e25d99;
+  color: #fff;
+}
+
+/* End of Navbar styles */
+
+/* Main image */
+.product-heading-row {
+  padding: 0 1px;
+}
+
+.main-background-image {
+  width: 100%;
+  z-index: -1;
+}
+
+.iphone-image {
+  position: absolute;
+  bottom: 2px;
+  /* top: 5px; */
+  transform: rotate(-15deg);
+  width: 150%;
+  z-index: 1;
+}
+
+.main-heading {
+  color: #fff;
+  position: absolute;
+  bottom: 120px;
+  left: 650px;
+  z-index: 1;
+  margin-left: 0;
+}
+
+/* End of main image section */
+
+/* Features section */
+
+.features-row {
+  text-align: center;
+  margin: 0 2%;
+  padding: 2%;
+}
+
+.icon-row {
+  text-align: center;
+}
+
+
+.feature-icon {
+  color: #41a7b3;
+  padding: 3%;
+}
+
+/* Video section */
+#video {
+  text-align: center;
+  padding: 4% 0;
+}
+
+.video-explanation {
+  color: #aaaaaa;
+  font-style: italic;
+}
+
+/* Email section */
+.form {
+  text-align: center;
+  padding: 3% 20%;
+}
+
+.submit-button-section {
+  padding: 2% 0;
+}
+
+.submit-button {
+  background-color: #41a7b3;
+  color: #fff;
+  padding: 1%;
+  box-shadow: ;
+}
+
+.submit-button: hover {
+  background-color: #048998;
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  background-color: #048998;
+  color: #dadddf;
+  text-align: center;
+}
+
+.footer-link {
+  color: #444444;
+}
+
+.footer-link:hover {
+  color: #f30067;
+}
+
+.photo-credit {
+  font-size: 0.4em;
+}

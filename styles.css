@@ -3,6 +3,12 @@ body {
   height: 100%;
 }
 
+/* the z-index for these elements has to be lower than -1 so when you scroll,
+the navbar is always at the top and in front of the other content */
+#id, #main-image, #features, #video {
+  z-index: -2;
+}
+
 /* Navbar */
 
 .top-row {
@@ -14,14 +20,21 @@ body {
   position: absolute;
   top: -0px;
   left: 35px;
-  z-index: 1;
+  z-index: 6;
+
+  /* position: fixed; */
+  top: 0px;
 }
 
 .navbar {
   background: 0.5;
   background-color: #41a7b3;
   padding: 1% 2%;
-  z-index: 0;
+  z-index: 5;
+  /* keeps navbar elements at the top */
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }
 
 .nav-item {
@@ -95,9 +108,10 @@ body {
 }
 
 /* Email section */
-.form {
+#form {
   text-align: center;
   padding: 3% 20%;
+  z-index: -2;
 }
 
 .submit-button-section {

@@ -16,13 +16,13 @@ the navbar is always at the top and in front of the other content */
 }
 
 .logo {
-  width: 100%;
+  width: 15%;
   position: absolute;
   top: -0px;
   left: 35px;
   z-index: 6;
 
-  /* position: fixed; */
+  position: fixed;
   top: 0px;
 }
 
@@ -55,25 +55,25 @@ the navbar is always at the top and in front of the other content */
 
 .main-background-image {
   width: 100%;
-  z-index: -1;
+  height: 900px;
+  /* z-index: -1; */
 }
 
 .iphone-image {
   position: absolute;
-  bottom: 2px;
-  /* top: 5px; */
+  bottom: 150%;
+  left: 5%;
   transform: rotate(-15deg);
-  width: 150%;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .main-heading {
   color: #fff;
-  position: absolute;
+  /* position: absolute;
   bottom: 120px;
-  left: 650px;
+  left: 650px; */
   z-index: 1;
-  margin-left: 0;
+  margin-bottom: 3.5rem;
 }
 
 /* End of main image section */
@@ -122,12 +122,12 @@ the navbar is always at the top and in front of the other content */
   background-color: #41a7b3;
   color: #fff;
   padding: 1%;
-  box-shadow: ;
+  box-shadow: 0;
+  cursor: pointer;
 }
 
-.submit-button: hover {
-  background-color: #048998;
-  cursor: pointer;
+input: hover {
+  background: #f30067;
 }
 
 /* Footer */
@@ -136,6 +136,9 @@ footer {
   background-color: #048998;
   color: #dadddf;
   text-align: center;
+  padding: 0.5% 0;
+  /* makes the footer go all the way to the bottom of the page */
+  height: 6em;
 }
 
 .footer-link {

@@ -3,34 +3,28 @@ body {
   height: 100%;
 }
 
-/* the z-index for these elements has to be lower than -1 so when you scroll,
-the navbar is always at the top and in front of the other content */
-#id, #main-image, #features, #video {
-  z-index: -2;
-}
-
 /* Navbar */
 
 .top-row {
   background-color: #41a7b3;
+  height: 5%;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
 }
 
 .logo {
   width: 15%;
-  position: absolute;
-  top: -0px;
   left: 35px;
-  z-index: 6;
-
   position: fixed;
   top: 0px;
+  z-index: 4;
 }
 
 .navbar {
   background: 0.5;
   background-color: #41a7b3;
-  padding: 1% 2%;
-  z-index: 5;
+  padding: 1% 2% 1% 20%;
   /* keeps navbar elements at the top */
   position: fixed;
   top: 0px;
@@ -38,7 +32,12 @@ the navbar is always at the top and in front of the other content */
 }
 
 .nav-item {
+  font-size: 20px;
   padding: 7px 25px;
+}
+
+a:hover {
+  color: #e25d99;
 }
 
 .btn-style {
@@ -48,74 +47,110 @@ the navbar is always at the top and in front of the other content */
 
 /* End of Navbar styles */
 
-/* Main image */
-.product-heading-row {
-  padding: 0 1px;
+/* Main heading section */
+
+#main-product-section {
+  background-color: #048998;
 }
 
-.main-background-image {
-  width: 100%;
-  height: 900px;
-  /* z-index: -1; */
+.product-heading-row {
+  padding: 10% 5%;
 }
 
 .iphone-image {
+  width: 70%;
   position: absolute;
-  bottom: 150%;
   left: 5%;
   transform: rotate(-15deg);
-  /* z-index: 1; */
 }
 
 .main-heading {
   color: #fff;
-  /* position: absolute;
-  bottom: 120px;
-  left: 650px; */
-  z-index: 1;
-  margin-bottom: 3.5rem;
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: bold;
 }
 
-/* End of main image section */
+.main-heading-subtitle {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 1.5;
+  margin-right: 15%;
+}
+
+/* End of main heading section */
 
 /* Features section */
 
-.features-row {
-  text-align: center;
+#features {
+  text-align: center; /* only applies to the p elements */
   margin: 0 2%;
-  padding: 2%;
+  padding: 7% 3%;
 }
 
-.icon-row {
-  text-align: center;
+/* block as a whole needs to be centered for items in it to be center-aligned */
+.feature-column, .icon-row, .text-row {
+  display: inline-block;
 }
 
+.text-row {
+  margin: 10% 8% 0 8%;
+}
+
+.feature-heading {
+  font-size: 40px;
+  margin: 0 10%;
+}
+
+.feature-text {
+  font-size: 20px;
+  margin: 15%;
+}
 
 .feature-icon {
-  color: #41a7b3;
-  padding: 3%;
+  color: #e25d99;
+  padding: 10%;
 }
 
 /* Video section */
 #video {
+  background-color: #048998;
   text-align: center;
   padding: 4% 0;
+}
+
+.video-heading {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 2%;
 }
 
 .video-explanation {
   color: #aaaaaa;
   font-style: italic;
+  margin-top: 2%;
 }
 
 /* Email section */
 #form {
   text-align: center;
-  padding: 3% 20%;
+  padding: 3% 30%;
   z-index: -2;
 }
 
+.contact-heading {
+  color: #e25d99;
+  font-size: 40px;
+  margin-bottom: 3%;
+}
+
+.contact-prompt {
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+
 .submit-button-section {
-  padding: 2% 0;
+  padding: 5% 0;
 }
 
 .submit-button {
@@ -126,29 +161,42 @@ the navbar is always at the top and in front of the other content */
   cursor: pointer;
 }
 
-input: hover {
-  background: #f30067;
+.submit-button:hover {
+  background: #e25d99;
 }
 
 /* Footer */
 
 footer {
   background-color: #048998;
-  color: #dadddf;
+  color: #fff;
   text-align: center;
-  padding: 0.5% 0;
+  padding: 1.5% 0;
   /* makes the footer go all the way to the bottom of the page */
-  height: 6em;
+  width: 100%;
 }
 
 .footer-link {
   color: #444444;
+  margin: 2%;
 }
 
 .footer-link:hover {
-  color: #f30067;
+  color: #e25d99;
+  text-decoration: none;
+}
+
+.copyright {
+  margin: 1% 0;
 }
 
 .photo-credit {
-  font-size: 0.4em;
+  font-size: 0.6em;
+}
+
+/* media query */
+@media(max-width: 1000px) {
+  /*makes phone image disappear for screens with widths of 1000px or less */
+  .iphone-image {
+    width: 0%;
 }

@@ -58,6 +58,7 @@
                 <button type="button" onclick="window.location.href='#form'" class="btn btn-style">Contact</button>
               </li>
           </div>
+        </nav>
 
       </div> <!-- Col-10 end div -->
 
@@ -65,20 +66,18 @@
 
     </header>
 
-<!-- section with blurry background image and phone image -->
-<div class="main-product-section" id="main-image">
-  <img src="bruno-nascimento-263722jpg.jpg" class="main-background-image" alt="Blurry background image">
+<!-- section phone image and main heading -->
+<div class="" id="main-product-section">
 
 <div class="row product-heading-row">
 
   <div class="col-lg-5">
-
-    <img src="iphone-8-mockup-4.png" alt="Mobile phone image" class="iphone-image">
-
+    <img src="iphone-8-mockup-4.png" alt="Mobile phone image" class="iphone-image" />
   </div>
 
   <div class="col-lg-7">
-    <h1 class="main-heading"> Bright Watts: The appliance technology of the future</h1>
+    <h1 class="main-heading"> Bright Watts</h1>
+    <p class="main-heading-subtitle">The appliance technology of the future</p>
   </div>
 
 </div>
@@ -90,14 +89,14 @@
 <div class="row features-row" id="features">
 
 <!-- First feature section -->
-<div class="col-4">
+<div class="col-lg-4 feature-column">
 
   <!-- Two rows within this column: top one for image, bottom one for text -->
   <div class="row icon-row"> <!-- First feature, top row (image) -->
     <i class="far fa-lightbulb fa-9x feature-icon"></i>
   </div>
 
-  <div class="row"> <!-- First feature, bottom row (text) -->
+  <div class="row text-row"> <!-- First feature, bottom row (text) -->
 
     <h2 class="feature-heading">Taking <em>smart</em> to the next level</h2>
     <p class="feature-text">Bright Watts allows you to use electricity when it is cheapest and from what type of energy source you prefer.</p>
@@ -107,13 +106,13 @@
 </div>
 
 <!-- Second feature section -->
-<div class="col-4">
+<div class="col-lg-4 feature-column">
 
   <div class="row icon-row"> <!-- Second feature, top row (image) -->
 <i class="fas fa-chart-line fa-9x feature-icon"></i>
   </div>
 
-  <div class="row"> <!-- Second feature, bottom row (text) -->
+  <div class="row text-row"> <!-- Second feature, bottom row (text) -->
 
     <h2 class="feature-heading">Spot market tracking</h2>
     <p class="feature-text">Bright Watts tracks spot market data live, analyses futures and projections and reacts accordingly.</p>
@@ -123,16 +122,16 @@
 </div>
 
 <!-- Third feature section -->
-<div class="col-4">
+<div class="col-lg-4 feature-column">
 
   <div class="row icon-row"> <!-- Third feature, top row (image) -->
 <i class="fas fa-microchip fa-9x feature-icon"></i>
   </div>
 
-  <div class="row"> <!-- Third feature, bottom row (text) -->
+  <div class="row text-row"> <!-- Third feature, bottom row (text) -->
 
     <h2 class="feature-heading">Appliance independent</h2>
-    <p class="feature-text">Any smart appliance you have can become "Bright Watts smart": Be it your washing machine, dish washer or oven.</p>
+    <p class="feature-text">Any smart appliance you have can become <em>Bright Watts smart</em>: Be it your washing machine, dish washer or oven.</p>
 
   </div>
 
@@ -142,8 +141,8 @@
 
 <!-- Video section -->
 
-<div class="" id="video">
-<label for="">Check out our video to learn more!</label> <br>
+<div id="video">
+<label class="video-heading">Check out our video to learn more!</label> <br>
   <iframe src="https://www.youtube.com/embed/NvagllRGpQ0" width="560" height="345"></iframe>
   <p class="video-explanation">PS: There is no video for Bright Watts as the company doesn't exist yet, so here is just an example video of a techy kitchen :)</p>
 
@@ -151,11 +150,12 @@
 
 <!-- Contact section -->
 
-<div id="form">
+<div>
 
   <form class="" action="https://www.freecodecamp.org/email-submit" method="post" id="form">
 
-    <label for="">Let us know your email address so we can contact you!</label>
+    <label class="contact-heading">Get in touch!</label>
+    <h1 class="contact-prompt">Let us know your email address so we can contact you:</h1>
     <input type="email" name="email" class="form-control" placeholder="Type in your email address here" value="" id="email">
 
   <div class="submit-button-section">
@@ -174,8 +174,7 @@
     <a href="#" class="footer-link">Privacy</a>
     <a href="#" class="footer-link">Terms</a>
     <a href="#" class="footer-link">Contact</a>
-    <p>Copyright: Bright Watts Ltd. 2019</p>
-    <p class="photo-credit">Photo by Bruno Nascimento on Unsplash</p>
+    <p class="copyright"><i class="far fa-copyright"></i> Bright Watts Ltd. 2019</p>
 
   </footer>
 
